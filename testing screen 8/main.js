@@ -84,7 +84,7 @@ function update() {
     requestAnimationFrame(update);
 }
 function simulateClicks() {
-    const clickInterval = 500; // Interval in milliseconds to simulate clicks
+    const clickInterval = 500;
 
     setInterval(() => {
         const randomIndex = Math.floor(Math.random() * trains.length);
