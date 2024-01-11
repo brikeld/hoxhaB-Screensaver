@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="https://ecal-technologies-centre.github.io/e-ink/libraries/clock/clock.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://ecal-technologies-centre.github.io/e-ink/libraries/clock/clock_style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScreensaverV11</title>
+    <script type="module" src="main.js" defer></script>
+    <style>
+        @font-face {
+            font-family: "Eurocat";
+            src: url("Maxitype%20Eurocat/VF/EurocatVF.woff2") format("woff2"),
+                url("Maxitype%20Eurocat/VF/EurocatVF.woff") format("woff"),
+                url("Maxitype%20Eurocat/VF/EurocatVF.ttf") format("truetype");
+            font-weight: 100 900;
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .train {
+            font-family: "Eurocat", sans-serif;
+            position: absolute;
+            color: white;
+            white-space: nowrap;
+        }
+
+        .line {
+            position: absolute;
+            width: 100vw;
+            height: 2px;
+            background-color: rgb(0);
+        }
+
+        .clock-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-container">
+        <section class="clock hidden">
+            <div class="display">
+                <input type="text" name="Hour" min="0" max="23" value="00" data-old="00">:
+                <input type="text" name="Minute" min="0" max="59" value="00" data-old="00">:
+                <input type="text" name="Second" min="0" max="59" value="00" data-old="00">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
